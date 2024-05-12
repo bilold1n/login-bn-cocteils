@@ -36,7 +36,7 @@ body {
 }
 .ou1 {
   width: 520px;
-  height: 775px;
+  height: 690px;
   opacity: 0px;
   border: 3px solid #ffffff15;
   border-radius: 25px;
@@ -63,6 +63,10 @@ body {
 .title {
   display: flex;
 }
+.tit {
+  padding: 0;
+  margin: 0;
+}
 .div {
   display: flex;
   flex-direction: column;
@@ -75,7 +79,7 @@ body {
   justify-content: center;
   margin: auto;
   color: #fff;
-  gap: 5px;
+  gap: 8px;
 }
 .btn4 {
   text-decoration: dashed;
