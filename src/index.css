@@ -27,7 +27,7 @@ body {
 }
 .ou {
   width: 520px;
-  height: 515px;
+  height: 555px;
   opacity: 0px;
   border: 3px solid #ffffff15;
   border-radius: 25px;
@@ -57,6 +57,11 @@ body {
 }
 .sar {
   color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.title {
+  display: flex;
 }
 .div {
   display: flex;

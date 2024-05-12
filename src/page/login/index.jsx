@@ -26,7 +26,7 @@ function Login() {
     <>
       <div className="container ou">
         <form className="inout" onSubmit={hendlesubmit}>
-          <div className="div orab">
+          <div className="orab title">
             {" "}
             <p className="sar">Your logo</p>
             <h2 className="sar">Log in</h2>
