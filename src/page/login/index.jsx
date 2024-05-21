@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
   const userName = useRef();
   const pasword = useRef();
   const naviate = useNavigate();
+  const [eror, seteror] = useState("");
+
   const hendlesubmit = (e) => {
     e.preventDefault();
 
@@ -20,6 +22,7 @@ function Login() {
       naviate("/layout");
     } else {
       localStorage.setItem("user", JSON.stringify(false));
+      seteror("User not found !");
     }
   };
   return (
@@ -49,6 +52,7 @@ function Login() {
               required
               placeholder="Password"
             />
+            <h2 className="eror">{eror}</h2>
           </div>
           <div className="div1">
             <button className="btn" type="submit">

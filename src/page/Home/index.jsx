@@ -21,7 +21,7 @@ function Hpme() {
         setloading(false);
       });
   }, [url]);
-  const hendlsubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     seturl(
       "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" +
@@ -31,7 +31,7 @@ function Hpme() {
   return (
     <>
       <section className="section search">
-        <form className="search-form" onSubmit={hendlsubmit}>
+        <form className="search-form" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="input">search your favorite cocktail</label>
             <input
@@ -76,7 +76,7 @@ function Hpme() {
                             <Link
                               style={{ color: "#ffffff" }}
                               className=" btn-primary btn-details"
-                              to={`/detalis/${idDrink}`}
+                              to={`details/${idDrink}`}
                             >
                               details
                             </Link>

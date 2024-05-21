@@ -15,7 +15,7 @@ function Detalis() {
   return (
     <>
       <section className="section cocktail-section">
-        <Link className="btn btn-primary" to={"/"}>
+        <Link className=" btn-primary" to={"/layout"}>
           back home
         </Link>
         <h2 className="section-title">{cocteil?.strDrink}</h2>
